@@ -647,6 +647,31 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
+        .app-footer {
+            margin-top: 6px;
+            margin-bottom: 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.92);
+            text-shadow: 0 1px 4px rgba(0, 50, 100, 0.35);
+            text-align: center;
+            letter-spacing: 0.4px;
+        }
+
+        .app-footer a {
+            color: #7dff57;
+            font-weight: 900;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(125, 255, 87, 0.65);
+            padding-bottom: 1px;
+            transition: opacity 0.2s, border-color 0.2s;
+        }
+
+        .app-footer a:hover {
+            opacity: 0.85;
+            border-color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -803,6 +828,10 @@
         
         <button class="sims-btn" onclick="saveLog()" style="background: linear-gradient(to bottom, #43a047, #2e7d32); border-color: #81c784;">💾 Sačuvaj dnevnik žurke</button>
     </div>
+
+    <footer class="app-footer">
+        Made by <a href="https://www.instagram.com/tr0kut/" target="_blank" rel="noopener noreferrer">@tr0kut</a>
+    </footer>
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
